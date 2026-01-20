@@ -1,0 +1,136 @@
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #e5e7eb;
+}
+
+/* ===== PAGE ===== */
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+.content {
+  width: 100%;
+  max-width: 960px;
+}
+
+/* ===== HEADERS ===== */
+h1 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 8px;
+  background: linear-gradient(90deg, #22d3ee, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 18px;
+  color: #f8fafc;
+}
+
+/* ===== GRID ===== */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== CARD ===== */
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 26px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* ===== INPUTS ===== */
+input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  background: #020617;
+  color: #e5e7eb;
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: #94a3b8;
+}
+
+input:focus {
+  outline: none;
+  border-color: #38bdf8;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  color: #020617;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(34, 211, 238, 0.35);
+}
+
+button.secondary {
+  background: linear-gradient(135deg, #64748b, #94a3b8);
+}
+
+button.danger {
+  background: linear-gradient(135deg, #ef4444, #f97316);
+}
+
+/* ===== ACTION GROUP ===== */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* ===== JSON OUTPUT ===== */
+pre {
+  margin-top: 18px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #020617;
+  color: #e5e7eb;
+  font-size: 13px;
+  overflow-x: auto;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+}
