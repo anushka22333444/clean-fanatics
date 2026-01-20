@@ -1,3 +1,4 @@
+Backend Setup
 Step 1: Navigate to backend directory
 cd booking-backend
 
