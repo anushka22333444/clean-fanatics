@@ -1,7 +1,7 @@
 Backend Setup
 
 Step 1: Navigate to backend directory
-cd booking-backend
+cd backend
 
 Step 2: Install backend dependencies
 npm install
@@ -33,7 +33,7 @@ Frontend Setup
 Keep the backend running in a separate terminal.
 
 Step 1: Open a new terminal and move to frontend
-cd booking-frontend
+cd frontend
 
 Step 2: Install frontend dependencies
 npm install
